@@ -22,9 +22,8 @@ set(TBB_LINK_DIRS ${TBB_LINK_DIRS})
 set(TBB_LIBRARIES ${TBB_LIBRARIES})
 
 # ADD_SUBDIRECTORY(vendor/boost)
-find_package(Boost 1.54 REQUIRED COMPONENTS system thread filesystem)
-set(BOOST_INCLUDE_DIRS ${Boost_INCLUDE_DIRS})
-set(BOOST_LINK_DIRS ${Boost_LIBRARIES})
+set(BOOST_INCLUDE_DIRS /usr/include/boost/)
+set(BOOST_LINK_DIRS /usr/lib/x86_64-linux-gnu/)
 set(BOOST_THREAD_LIBRARIES ${Boost_LIBRARIES}/libboost_thread.so)
 set(BOOST_SYSTEM_LIBRARIES ${Boost_LIBRARIES}/libboost_system.so)
 
