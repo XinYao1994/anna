@@ -1,11 +1,11 @@
 cmake_minimum_required (VERSION 2.6)
 PROJECT(Tiered-Storage)
 
-SET (CMAKE_CXX_COMPILER /usr/bin/clang++)
+SET (CMAKE_CXX_COMPILER /usr/bin/g++)
 
 SET(CMAKE_CXX_FLAGS_COMMON
     "-std=c++11 \
-    -stdlib=libc++")
+    -fPIC")
 SET(CMAKE_CXX_FLAGS_DEBUG
     "${CMAKE_CXX_FLAGS_DEBUG} \
     ${CMAKE_CXX_FLAGS_COMMON}")
