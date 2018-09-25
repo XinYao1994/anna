@@ -1,3 +1,13 @@
+# Update 
+With this version, you are able to compile Anna with GUN g++
+
+Do not forget compile configure with flags "CXXFLAGS='-std=c++11 -O3 -g"
+
+In Ubuntu 18.04, you may need to apt-get remove libprotobuf-dev protobuf-compiler
+
+And you need to make sure the location of the protobuf.
+
+
 # Anna: A KVS for any scale
 
 Anna is an in-memory KVS that delivers high performance at multiple scales, from a single core machine to NUMA to geo-distributed deployment. It also provides a wide spectrum of coordination-free isolation levels that aim to meet the consistency requirements of different applications.
